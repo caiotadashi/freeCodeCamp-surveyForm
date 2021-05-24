@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Get Spammed Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="main">
+
+  <h1 id="title">Get Spammed NOW</h1>
+  <p id="description">Send your data and receive unlimited spam right now!</p>
+  
+  <div class="box">
+    <form id="survey-form">
+      <div class="question-box">
+        <label for="name" id="name-label">Name*</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="question-box">
+        <label for="email" id="email-label">Email*</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="question-box">
+        <label for="age" id="number-label">Age</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="200">
+      </div>
+      <div class="question-box">
+        <p>Gender</p>
+        <label>
+          <input name="question" value="option 1" type="radio">Man
+        </label>
+        <label>
+          <input name="question" value="option 2" type="radio">Woman
+        </label>
+        <label>
+          <input name="question" value="option 3" type="radio">Other
+        </label>
+      </div>
+      <div class="question-box">
+        <p><label for="frequency">Which frequency you want to receive spam?*</label></p>
+        <select id="dropdown" name="frequency" required>
+          <option disabled selected value>Choose the frequency</option>
+          <option value="hourly">Hourly</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+      </div>
+      <div class="question-box">
+        <p>Select your interests</p>
+        <label><input name="interests" type="checkbox" value="arts">Arts</label>
+        <label><input name="interests" type="checkbox" value="arts">Food</label>
+        <label><input name="interests" type="checkbox" value="gaming">Gaming</label>
+        <label><input name="interests" type="checkbox" value="technology">Technology</label>
+        <label><input name="interests" type="checkbox" value="travel">Travel</label>
+      </div>
+      <div class="question-box">
+        <p>Any comments?</p>
+        <textarea></textarea>
+      </div>
+      <div class="question-box">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+</main>
+
+<!-- partial -->
+  
+</body>
+</html>
